@@ -1,0 +1,172 @@
+/* ---------------------------------------------------*/
+/* --------------- CSS GRID FRAMEWORK --------------- */
+/* ---------------------------------------------------*/
+
+/* --------------- GLOBAL STYLES --------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* --------------- TYPEOGRAPHY --------------- */
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 5px, 0;
+}
+
+h1, h2, h3, h4 {
+    color: grey;
+    font-family: 'Palatino', serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(34, 109, 222);
+}
+
+hr {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background-color: #fae8e6;
+}
+
+/* --------------- LAYOUT STYLES --------------- */
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+
+
+/* --------------- BUTTON STYLES --------------- */
+[class*="btn-"] {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #e8cdca;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #8b788a;
+}
+
+/* --------------- CALLOUT STYLES --------------- */
+[class*="callout-"] {
+    padding: 19px;
+    margin-bottom: 10px;
+    border: solid 1px transparent;
+}
+
+.callout-primary {
+    color: #8b788a;
+    background-color: #fff;
+    text-align: center;
+}
+
+.callout-secondary {
+    color: black;
+    background-color: #f5f5f5;
+    border-color: #e3e3e3;
+}
+
+/* --------------- IMAGE STYLES ---------------  */
+img.img-fluid {    /* Any Image class that has the image-fluid class, not just inside */
+    width: 100%;
+}
+
+img.img-rounded {
+    border-radius: 10px;
+}
+
+img.img-circle {
+    border-radius: 50%;
+}
+
+
+/* --------------- NAVBAR ---------------  */
+nav {
+    background-color:  #8b788a;
+}
+
+nav span {
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+
+nav a:hover {
+    background-color: #fae8e6;
+    color: grey;
+}
+
+/* --------------- GRID STYLES ---------------*/
+/* Row */
+nav::after,
+section::after,
+aside::after,
+main::after,
+footer::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+    margin: 0 -10px;      /* Counter the padding below */
+}
+
+/* Columns */
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+footer {
+    color: grey;
+    padding: 5px;
+    background-color: #fae8e6;
+    text-align: center;
+}
